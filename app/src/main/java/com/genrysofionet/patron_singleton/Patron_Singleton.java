@@ -17,6 +17,9 @@ public class Patron_Singleton {
         return modelo;
     }
 
+    private Patron_Singleton(){
+        }
+
     public String getUsuario() {
         return usuario;
     }

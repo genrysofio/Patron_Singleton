@@ -24,8 +24,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void uiObjectsOutlets(){
-        txtUserNickName.setText(Patron_Singleton.getInformacion().getUsuario());
-        txtUserFullName.setText(Patron_Singleton.getInformacion().getNombreCom());
-        txtUserAge.setText(String.valueOf(Patron_Singleton.getInformacion().getEdadUsuario()));
+        Patron_Singleton patron=Patron_Singleton.getInformacion();
+        txtUserNickName.setText(patron.getUsuario());
+        txtUserFullName.setText(patron.getNombreCom());
+        txtUserAge.setText(String.valueOf(patron.getEdadUsuario()));
     }
 }
