@@ -5,7 +5,7 @@ package com.genrysofionet.patron_singleton;
  */
 
 public class Patron_Singleton {
-    private static Patron_Singleton modelo;
+    private static Patron_Singleton modelo=new Patron_Singleton();
     private String usuario, nombreCom;
     private Integer edadUsuario;
 
