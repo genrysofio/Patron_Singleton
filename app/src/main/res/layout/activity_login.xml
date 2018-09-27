@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/login_activity_edt_nick_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="usuario"
+        android:inputType="textPersonName"
+        android:nextFocusDown="@id/login_activity_edt_full_name"/>
+
+    <EditText
+        android:id="@+id/login_activity_edt_full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre Completo"
+        android:layout_marginTop="15dp"
+        android:inputType="textPersonName"
+        android:nextFocusDown="@id/login_activity_edt_age"/>
+
+    <EditText
+        android:id="@+id/login_activity_edt_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Edad"
+        android:layout_marginTop="15dp"
+        android:inputType="number"
+        android:nextFocusDown="@id/login_activity_btn_sign_in"/>
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:id="@+id/login_activity_btn_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="aceptar" />
+
+</LinearLayout>
